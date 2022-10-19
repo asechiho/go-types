@@ -22,7 +22,6 @@ func (code *Alpha2Code) UnmarshalJSON(data []byte) error {
 			return &json.UnmarshalTypeError{
 				Value: err.Error(),
 				Type:  reflect.TypeOf(enumValue),
-				Field: str,
 			}
 		}
 	}
