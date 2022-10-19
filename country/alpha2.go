@@ -3,6 +3,7 @@ package country
 import (
 	"database/sql/driver"
 	"encoding/json"
+	"reflect"
 )
 
 // Alpha2Code represents alpha-2 code
@@ -18,7 +19,11 @@ func (code *Alpha2Code) UnmarshalJSON(data []byte) error {
 	enumValue := Alpha2Code(str)
 	if len(enumValue) != 0 {
 		if _, err := ByAlpha2CodeErr(enumValue); err != nil {
-			return err
+			return &json.UnmarshalTypeError{
+				Value: err.Error(),
+				Type:  reflect.TypeOf(enumValue),
+				Field: str,
+			}
 		}
 	}
 
