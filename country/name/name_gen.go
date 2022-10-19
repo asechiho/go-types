@@ -1,6 +1,6 @@
 package name
 
-import "github.com/mikekonan/go-types/v2/country"
+import "github.com/asechiho/go-types/v2/country"
 
 const (
 	// Afghanistan represents 'Afghanistan' country name

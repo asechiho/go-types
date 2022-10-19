@@ -1,6 +1,6 @@
 package alpha3
 
-import "github.com/mikekonan/go-types/v2/country"
+import "github.com/asechiho/go-types/v2/country"
 
 const (
 	// AFG represents 'AFG' country alpha-3 code

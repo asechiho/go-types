@@ -1,6 +1,6 @@
 package code
 
-import "github.com/mikekonan/go-types/v2/currency"
+import "github.com/asechiho/go-types/v2/currency"
 
 const (
 	// AFN represents 'AFN' currency code

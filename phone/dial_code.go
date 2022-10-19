@@ -4,7 +4,7 @@ import (
 	"database/sql/driver"
 	"encoding/json"
 	"fmt"
-	"github.com/mikekonan/go-types/v2/country"
+	"github.com/asechiho/go-types/v2/country"
 	"strings"
 )
 

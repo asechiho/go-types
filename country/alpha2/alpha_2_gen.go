@@ -1,6 +1,6 @@
 package alpha2
 
-import "github.com/mikekonan/go-types/v2/country"
+import "github.com/asechiho/go-types/v2/country"
 
 const (
 	// AF represents 'AF' country alpha-2 code
